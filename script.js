@@ -1,5 +1,5 @@
-// Target wedding date: 11 November 2026, 11:00 AM IST (+05:30)
-const weddingDate = new Date("2026-11-11T11:00:00+05:30").getTime();
+// Target wedding date: 11 November 2026, 10:00 AM IST (+05:30)
+const weddingDate = new Date("2026-11-11T10:00:00+05:30").getTime();
 let countdown;
 
 function updateCountdown() {
