@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.92),
+      rgba(255, 255, 255, 0.92)
+    ),
+    url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1400&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.card {
+  width: 100%;
+  max-width: 550px;
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 40px 25px;
+  text-align: center;
+  border: 4px solid #d4af37;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade {
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+}
+
+.d1 { animation-delay: 0.2s; }
+.d2 { animation-delay: 0.5s; }
+.d3 { animation-delay: 0.8s; }
+.d4 { animation-delay: 1.1s; }
+.d5 { animation-delay: 1.4s; }
+
+.cross {
+  font-size: 50px;
+  color: #d4af37;
+}
+
+.title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  color: #8b5e3c;
+}
+
+.subtitle {
+  margin-top: 8px;
+  color: #666;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.message {
+  margin-top: 25px;
+  color: #444;
+  line-height: 1.8;
+}
+
+.couple {
+  margin: 25px 0;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #b8860b;
+}
+
+.date {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.venue {
+  margin-top: 20px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.verse {
+  margin-top: 25px;
+  background: #faf7ef;
+  padding: 18px;
+  border-left: 5px solid #d4af37;
+  border-radius: 10px;
+  font-style: italic;
+  color: #666;
+}
+
+.countdown {
+  margin-top: 35px;
+}
+
+.countdown h2 {
+  color: #8b5e3c;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.timer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.box {
+  background: #faf7ef;
+  border: 2px solid #d4af37;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.box span {
+  display: block;
+  font-size: 2rem;
+  color: #b8860b;
+  font-weight: bold;
+}
+
+.box small {
+  color: #666;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.whatsapp {
+  background: #25d366;
+}
+
+.map {
+  background: #4285f4;
+}
+
+.reception {
+  background: #8e44ad;
+}
+
+.footer {
+  margin-top: 25px;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+.current-time-bar {
+  margin-top: 15px;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.8rem;
+  }
+  .couple {
+    font-size: 2.3rem;
+  }
+  .card {
+    padding: 30px 18px;
+  }
+}
